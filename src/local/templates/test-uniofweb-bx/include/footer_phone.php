@@ -1,0 +1,1 @@
+<a class="footer-bottom__phone" href="tel:84872311345">8 (4872) 31-13-45</a>

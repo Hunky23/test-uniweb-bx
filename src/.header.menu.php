@@ -1,0 +1,46 @@
+<?php
+$aMenuLinks = Array(
+	Array(
+		"Главная", 
+		"/", 
+		Array(), 
+		Array(), 
+		""
+	),
+    Array(
+        "Подобрать<br>персонал",
+        "/staff/",
+        Array(),
+        Array(),
+        ""
+    ),
+	Array(
+		"Цены", 
+		"#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Оставить<br>заявку", 
+		"#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Оставить<br>вакансию", 
+		"#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"#", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
