@@ -84,57 +84,6 @@ body {
   &.active {
     display: block;
   }
-
-  &__form {
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-  }
-
-  &__field {
-    padding: 7px 10px;
-    width: 100%;
-    color:  #55493f;
-    font-size: 14px;
-    border: 1px solid #cd8e31;
-
-    &:not(:last-child) {
-      margin-bottom: 13px;
-    }
-
-    &::-webkit-input-placeholder,
-    &::placeholder {
-      opacity: 1;
-    }
-  }
-
-  textarea.header-popup__field {
-    height: 74px;
-    resize: none;
-  }
-
-  .selector {
-    width: 100%;
-
-    &:not(:last-child) {
-      margin-bottom: 13px;
-    }
-
-    &__inner span {
-      color:  #55493f;
-    }
-  }
-
-  &__btn {
-    color: #fff;
-    text-transform: uppercase;
-    border: 1px solid #ab6e17;
-    background: linear-gradient(#e7c18d,#a66e23 50%,#9c621e);
-
-    &:not(:first-child) {
-      margin-top: 17px;
-    }
-  }
 }
 
 .header-bottom {
@@ -277,13 +226,19 @@ body {
   }
 }
 
-/* Персонал */
-.personal {
+/* Подобрать персонал */
+.choose-staff {
   &__container {
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 23px;
     background: url('/image/bg.png');
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: #4e2c1e;
+    font-family: 'Book Antiqua', serif;
+    font-size: 25px;
+    text-align: center;
   }
 }
 

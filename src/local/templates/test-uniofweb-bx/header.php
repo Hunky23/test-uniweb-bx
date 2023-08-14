@@ -51,33 +51,33 @@ use Bitrix\Main\Page\Asset;
                         </a>
 
                         <div class="header-top__popup header-popup js-popup-body request">
-                            <form class="header-popup__form">
-                                <input class="header-popup__field" type="text" placeholder="ФИО">
-
-                                <input class="header-popup__field" type="tel" placeholder="Телефон">
-
-                                <select class="hidden js-select" name="profession">
-                                    <option value="tutor">Репетитор</option>
-                                    <option value="governess">Гувернантка</option>
-                                    <option value="babysitter" selected>Няня</option>
-                                    <option value="driver">Водитель</option>
-                                    <option value="gardner">Садовник</option>
-                                </select>
-
-                                <select class="hidden js-select" name="profession">
-                                    <option value="full-day">Полный день</option>
-                                    <option value="half-day">Пол дня</option>
-                                    <option value="work-schedule" selected>График работы</option>
-                                    <option value="few-hours">Несколько часов</option>
-                                    <option value="around-clock">Круглосуточно</option>
-                                </select>
-
-                                <textarea class="header-popup__field" placeholder="Дополнительная информация"></textarea>
-
-                                <button class="btn header-popup__btn">
-                                    <span>Отправить</span>
-                                </button>
-                            </form>
+                            <?php
+                            $APPLICATION->IncludeComponent("bitrix:form.result.new",
+                                "test-uniofweb-bx",
+                                array(
+                                    "CACHE_TIME" => "3600",
+                                    "CACHE_TYPE" => "A",
+                                    "CHAIN_ITEM_LINK" => "",
+                                    "CHAIN_ITEM_TEXT" => "",
+                                    "EDIT_URL" => "",
+                                    "IGNORE_CUSTOM_TEMPLATE" => "N",
+                                    "LIST_URL" => "",
+                                    "SEF_MODE" => "N",
+                                    "SUCCESS_URL" => "",
+                                    "USE_EXTENDED_ERRORS" => "N",
+                                    "VARIABLE_ALIASES" => Array(
+                                        "RESULT_ID" => "RESULT_ID",
+                                        "WEB_FORM_ID" => "WEB_FORM_ID"
+                                    ),
+                                    "WEB_FORM_ID" => "1",
+                                    "AJAX_MODE" => "Y",
+                                    "AJAX_OPTION_SHADOW" => "N",
+                                    "AJAX_OPTION_JUMP" => "N",
+                                    "AJAX_OPTION_STYLE" => "Y",
+                                    "AJAX_OPTION_HISTORY" => "N"
+                                )
+                            );
+                            ?>
                         </div>
 
                         <a class="btn header-contacts__btn js-popup-trigger resume" href="#">
@@ -85,27 +85,33 @@ use Bitrix\Main\Page\Asset;
                         </a>
 
                         <div class="header-top__popup header-popup js-popup-body resume">
-                            <form class="header-popup__form">
-                                <input class="header-popup__field" type="text" placeholder="ФИО">
-
-                                <input class="header-popup__field" type="tel" placeholder="Телефон">
-
-                                <select class="hidden js-select" name="profession">
-                                    <option value="tutor">Репетитор</option>
-                                    <option value="governess">Гувернантка</option>
-                                    <option value="babysitter" selected>Няня</option>
-                                    <option value="driver">Водитель</option>
-                                    <option value="gardner">Садовник</option>
-                                </select>
-
-                                <input class="header-popup__field" type="tel" placeholder="Образование">
-
-                                <input class="header-popup__field" type="text" placeholder="Прикрепить резюме">
-
-                                <button class="btn header-popup__btn">
-                                    <span>Отправить</span>
-                                </button>
-                            </form>
+                            <?php
+                            $APPLICATION->IncludeComponent("bitrix:form.result.new",
+                                "test-uniofweb-bx",
+                                array(
+                                    "CACHE_TIME" => "3600",
+                                    "CACHE_TYPE" => "A",
+                                    "CHAIN_ITEM_LINK" => "",
+                                    "CHAIN_ITEM_TEXT" => "",
+                                    "EDIT_URL" => "",
+                                    "IGNORE_CUSTOM_TEMPLATE" => "N",
+                                    "LIST_URL" => "",
+                                    "SEF_MODE" => "N",
+                                    "SUCCESS_URL" => "",
+                                    "USE_EXTENDED_ERRORS" => "N",
+                                    "VARIABLE_ALIASES" => Array(
+                                        "RESULT_ID" => "RESULT_ID",
+                                        "WEB_FORM_ID" => "WEB_FORM_ID"
+                                    ),
+                                    "WEB_FORM_ID" => "2",
+                                    "AJAX_MODE" => "Y",
+                                    "AJAX_OPTION_SHADOW" => "N",
+                                    "AJAX_OPTION_JUMP" => "N",
+                                    "AJAX_OPTION_STYLE" => "Y",
+                                    "AJAX_OPTION_HISTORY" => "N"
+                                )
+                            );
+                            ?>
                         </div>
                     </div>
                 </div>

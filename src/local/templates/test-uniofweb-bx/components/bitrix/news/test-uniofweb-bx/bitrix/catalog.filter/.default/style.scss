@@ -1,0 +1,91 @@
+.choose-staff-filter {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px 45px 15px;
+  font-family: Verdana, serif;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: rgba(190, 137, 63, 0.14);
+  border: 1px solid #c8bfa7;
+
+  &:before {
+    left: -10px;
+    top: -10px;
+    content: '';
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background: url("/image/mini-ornament-left.png");
+  }
+
+  &:after {
+    right: -10px;
+    top: -10px;
+    content: '';
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background: url("/image/mini-ornament-right.png");
+  }
+
+  .selector__inner {
+    color: #45250a;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+
+  .selector__option-list-wrapper {
+    width: 230px;
+  }
+
+  .selector__option-list {
+    border: 1px solid #b1b1b1;
+  }
+
+  .selector__option {
+    padding: 5px 10px;
+    color: #45250a;
+    font-size: 18px;
+  }
+
+  &__column {
+    &:nth-of-type(2) {
+      .choose-staff-filter__row {
+        text-align: end;
+      }
+    }
+  }
+
+  &__text {
+    color: #45250a;
+    font-size: 18px;
+  }
+
+  &__row {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__short-input {
+    margin: 0 15px;
+    color: #45250a;
+    font-size: 18px;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    transform: translateY(-2px);
+  }
+
+  &__btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #ab6e17;
+    border-radius: 5px;
+    background: linear-gradient(#e7c18d,#a66e23 50%,#9c621e);
+  }
+}
